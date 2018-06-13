@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4603972432007484}
   - component: {fileID: 54530072812555930}
-  - component: {fileID: 114396935243208692}
+  - component: {fileID: 114882286330041348}
   m_Layer: 0
   m_Name: Car Root
   m_TagString: Untagged
@@ -373,7 +373,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1095258926293650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4743391420650544}
@@ -699,7 +699,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114396935243208692
+--- !u!114 &114882286330041348
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1095258926293650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96c21943e690b6448a25cc4a349d90ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 97bed6c4d9cb1a9409f4c1236af8e7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   axleInfos:
@@ -719,7 +719,7 @@ MonoBehaviour:
     rightWheel: {fileID: 146012507586525398}
     motor: 1
     steering: 0
-  maxMotorTorque: 100
+  maxMotorTorque: 500
   maxSteeringAngle: 30
 --- !u!146 &146012507586525398
 WheelCollider:
