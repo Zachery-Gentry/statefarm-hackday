@@ -13,6 +13,7 @@ public class NextAreaPoint : MonoBehaviour
 
     private void Update()
     {
+        
 		transform.LookAt(areaManager.getCurrentTargetArea().transform);
 		Vector3 lookatRotaiton = transform.localEulerAngles;
 		// lookatRotaiton.x += 90;
