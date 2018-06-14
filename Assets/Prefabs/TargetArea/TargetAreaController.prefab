@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 114437160562716526}
   m_Layer: 0
   m_Name: TargetAreaController
-  m_TagString: Untagged
+  m_TagString: AreaManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1183,7 +1183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210d476e66c3bd649bf5b2bc4fdcd8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaManager: {fileID: 0}
 --- !u!114 &114437160562716526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1206,7 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210d476e66c3bd649bf5b2bc4fdcd8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaManager: {fileID: 0}
 --- !u!114 &114564055660075104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1218,7 +1216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210d476e66c3bd649bf5b2bc4fdcd8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaManager: {fileID: 0}
 --- !u!114 &114787767671826896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1230,7 +1227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210d476e66c3bd649bf5b2bc4fdcd8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaManager: {fileID: 0}
 --- !u!198 &198072455718458230
 ParticleSystem:
   m_ObjectHideFlags: 1
