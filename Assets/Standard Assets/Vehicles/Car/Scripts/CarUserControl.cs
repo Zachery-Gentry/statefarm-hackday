@@ -11,6 +11,9 @@ namespace UnityStandardAssets.Vehicles.Car
         private CarController m_Car; // the car controller we want to use
         private Wiimote wiimote;
 
+        public Transform centerPos;
+        public Transform chanHead;
+
         private void Awake()
         {
             // get the car controller
@@ -43,6 +46,7 @@ namespace UnityStandardAssets.Vehicles.Car
             wiimote.ReadWiimoteData();
             float v = wiimote.Button.two ? 1 : wiimote.Button.one ? -0.3f : 0;
             float h = -wiimote.Accel.GetCalibratedAccelData()[1] + 0.5f;
+            if (wiimote.Button.a) { CenterHead(); }
             Debug.Log("V: " + v);
             Debug.Log("H: " + h);
 #if !MOBILE_INPUT
@@ -51,6 +55,11 @@ namespace UnityStandardAssets.Vehicles.Car
 #else
             m_Car.Move(h, v, v, 0f);
 #endif
+        }
+
+        private void CenterHead()
+        {
+            chanHead.position = centerPos.position;
         }
     }
 }

@@ -74,11 +74,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
 		private void Update()
 		{
-            //Vector3 steeringWheelAngle = steeringWheel.transform.localEulerAngles;
-            //Debug.Log(steeringWheelAngle);
-            Vector3 tempAngle = new Vector3(0, CurrentSteerAngle * Time.deltaTime * 10f, 0);
-            //Debug.Log(steeringWheel.transform.localRotation);
-            steeringWheel.transform.Rotate(tempAngle);
+            steeringWheel.transform.localRotation = Quaternion.Euler(0,CurrentSteerAngle*2, 0);
 		}
 
 		private void GearChanging()
