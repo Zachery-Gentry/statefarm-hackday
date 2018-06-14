@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2785,7 +2785,7 @@ MonoBehaviour:
   - {fileID: 1351631847}
   - {fileID: 1262893537}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
-  m_MaximumSteerAngle: 25
+  m_MaximumSteerAngle: 17
   m_SteerHelper: 0.644
   m_TractionControl: 1
   m_FullTorqueOverAllWheels: 2500
@@ -3729,6 +3729,10 @@ Transform:
   m_Father: {fileID: 283446820}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &723361604 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1175888667}
 --- !u!1 &739029928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4055,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 787412428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e658bfc1e524494b9e54a1c92d8c1e0, type: 3}
   m_Name: 
@@ -10216,11 +10220,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.15112218
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.09506587
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10261,6 +10265,22 @@ Prefab:
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 468682, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
@@ -13224,8 +13244,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609360287}
-  m_LocalRotation: {x: -0.3849114, y: 0.6162761, z: 0.35974362, w: -0.5853474}
-  m_LocalPosition: {x: 0.0066108755, y: -0.097924896, z: -0.07649623}
+  m_LocalRotation: {x: -0.3849114, y: 0.6162762, z: 0.3597437, w: -0.5853473}
+  m_LocalPosition: {x: 0.0069988957, y: -0.39700016, z: -0.1279993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 125368862}
@@ -13243,8 +13263,8 @@ Transform:
   - {fileID: 948917776}
   - {fileID: 680185072}
   - {fileID: 1069739155}
-  m_Father: {fileID: 1175888668}
-  m_RootOrder: 1
+  m_Father: {fileID: 723361604}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1610426919
 GameObject:
@@ -14303,7 +14323,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796881914}
   m_LocalRotation: {x: -0.70710695, y: 0, z: 0, w: 0.70710665}
-  m_LocalPosition: {x: 0, y: 53.4, z: 0.7}
+  m_LocalPosition: {x: 0, y: 0.6, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1878661918}
@@ -14336,7 +14356,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 44.4
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
