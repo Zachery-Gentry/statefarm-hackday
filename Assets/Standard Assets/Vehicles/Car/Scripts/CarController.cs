@@ -36,6 +36,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
+        [SerializeField] private GameObject steeringWheel;
 
         private Quaternion[] m_WheelMeshLocalRotations;
         private Vector3 m_Prevpos, m_Pos;
@@ -71,8 +72,16 @@ namespace UnityStandardAssets.Vehicles.Car
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
+		private void Update()
+		{
+            Vector3 steeringWheelAngle = steeringWheel.transform.localEulerAngles;
+            //Debug.Log(steeringWheelAngle);
+            Vector3 tempAngle = new Vector3(0, CurrentSteerAngle * Time.deltaTime * 10f, 0);
+            //Debug.Log(steeringWheel.transform.localRotation);
+            steeringWheel.transform.Rotate(tempAngle);
+		}
 
-        private void GearChanging()
+		private void GearChanging()
         {
             float f = Mathf.Abs(CurrentSpeed/MaxSpeed);
             float upgearlimit = (1/(float) NoOfGears)*(m_GearNum + 1);
