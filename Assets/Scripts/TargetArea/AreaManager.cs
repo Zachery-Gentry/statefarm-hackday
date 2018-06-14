@@ -5,7 +5,7 @@ using UnityEngine;
 public class AreaManager : MonoBehaviour {
 
 	List<GameObject> targetAreaList = new List<GameObject>();
-	int currentActivatedArea = 0;
+	int currentActivatedAreaIndex = 0;
 
 	private void Start(){
 		Transform[] targetAreas = GetComponentsInChildren<Transform>(true);
@@ -21,8 +21,11 @@ public class AreaManager : MonoBehaviour {
 	}
 
 	public void nextTarget(){
-		targetAreaList[currentActivatedArea].SetActive(false);
-		currentActivatedArea++;
-		targetAreaList[currentActivatedArea].SetActive(true);
+		targetAreaList[currentActivatedAreaIndex].SetActive(false);
+		currentActivatedAreaIndex++;
+		targetAreaList[currentActivatedAreaIndex].SetActive(true);
+	}
+	public GameObject getCurrentTargetArea(){
+		return targetAreaList[currentActivatedAreaIndex];
 	}
 }
